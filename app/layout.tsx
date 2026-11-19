@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { DM_Sans, Instrument_Serif } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const dmSans = DM_Sans({
@@ -20,6 +21,7 @@ const description =
   "Prevedi la cassa delle prossime 8 settimane, tieni sotto controllo incassi e pagamenti e collabora con il commercialista. Prova gratis per 30 giorni.";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://hbg2-psi.vercel.app"),
   title,
   description,
   openGraph: { title, description, locale: "it_IT", type: "website", siteName: "CashKing Tesoreria per PMI" },
@@ -28,7 +30,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="it" className={`${dmSans.variable} ${instrumentSerif.variable}`}>
-      <body>{children}</body>
+      <body>{children}<Analytics /></body>
     </html>
   );
 }

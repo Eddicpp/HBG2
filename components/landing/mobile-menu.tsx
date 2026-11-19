@@ -3,8 +3,9 @@
 import { useId, useRef, useState } from "react";
 import type { ReactNode } from "react";
 import { Menu, X } from "lucide-react";
-import { LOGIN_URL } from "@/lib/config";
+import { LOGIN_URL, withLandingUtm } from "@/lib/config";
 import { navigation } from "./navigation";
+import { TrackedLink } from "./TrackedLink";
 
 export function MobileMenu({ trial }: { trial: ReactNode }) {
   const [open, setOpen] = useState(false);
@@ -25,7 +26,7 @@ export function MobileMenu({ trial }: { trial: ReactNode }) {
       </button>
       <nav className="mobile-links" aria-label="Navigazione mobile" id={id} hidden={!open}>
         {navigation.map(({ href, label }) => <a key={href} href={href} onClick={() => setOpen(false)}>{label}</a>)}
-        <a href={LOGIN_URL} onClick={closeMenu}>Accedi</a>
+        <TrackedLink href={withLandingUtm(LOGIN_URL, "header")} label="Accedi" section="header" onClick={closeMenu}>Accedi</TrackedLink>
         <div onClick={closeMenu}>{trial}</div>
       </nav>
     </div>

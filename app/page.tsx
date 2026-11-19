@@ -1,4 +1,5 @@
 import { Audience } from "@/components/landing/audience";
+import { CashSimulator } from "@/components/landing/CashSimulator";
 import { Comparison } from "@/components/landing/comparison";
 import { Excel } from "@/components/landing/excel";
 import { Faq } from "@/components/landing/faq";
@@ -9,6 +10,7 @@ import { Header } from "@/components/landing/header";
 import { Hero } from "@/components/landing/hero";
 import { HowItWorks } from "@/components/landing/how-it-works";
 import { Invoice } from "@/components/landing/invoice";
+import { MobileCtaBar } from "@/components/landing/MobileCtaBar";
 import { plans } from "@/components/landing/offer";
 import { Pricing } from "@/components/landing/pricing";
 import { Problem } from "@/components/landing/problem";
@@ -34,6 +36,7 @@ export default function Page() {
         <Hero />
         <Problem />
         <HowItWorks />
+        <CashSimulator />
         <Features />
         <Invoice />
         <Excel />
@@ -46,6 +49,7 @@ export default function Page() {
         <FinalCta />
       </main>
       <Footer />
+      <MobileCtaBar />
     </>
   );
 }

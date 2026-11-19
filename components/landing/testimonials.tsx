@@ -1,6 +1,9 @@
 import { SectionHeading } from "./shared";
+import { SHOW_PLACEHOLDERS } from "@/lib/config";
 
 export function Testimonials() {
+  if (!SHOW_PLACEHOLDERS) return null;
+
   return (
     <section className="section section-tint" aria-labelledby="testimonianze">
       <div className="shell">

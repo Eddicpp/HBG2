@@ -9,14 +9,14 @@ const roles = [
 
 export function Audience() {
   return (
-    <section className="section section-tint" aria-labelledby="per-chi">
+    <section className="section section-tint" id="ruoli" aria-labelledby="per-chi">
       <div className="shell split-section audience-layout">
         <SectionHeading label="PER CHI È" id="per-chi" title="La stessa cassa, tre punti di vista." description="Per chi guida una PMI B2B, tiene i conti o segue l’azienda dallo studio." />
         <Tabs defaultValue="titolare">
           <TabsList aria-label="Scegli il tuo ruolo">
             {roles.map(({ id, label }) => <TabsTrigger key={id} value={id}>{label}</TabsTrigger>)}
           </TabsList>
-          {roles.map(({ id, title, objection, response, cta: Cta }) => <TabsContent key={id} value={id}><h3>{title}</h3><p className="objection">{objection}</p><p>{response}</p><Cta /></TabsContent>)}
+          {roles.map(({ id, title, objection, response, cta: Cta }) => <TabsContent key={id} value={id}><h3>{title}</h3><p className="objection">{objection}</p><p>{response}</p><Cta section="ruoli" /></TabsContent>)}
         </Tabs>
       </div>
     </section>
