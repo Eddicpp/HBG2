@@ -1,11 +1,12 @@
-import { ArrowRight, Crown } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { DEMO_URL, TRIAL_URL, withLandingUtm } from "@/lib/config";
+import { BrandMark } from "./brand-mark";
 import { TrackedLink } from "./TrackedLink";
 
 export function Brand({ href = "#inizio" }: { href?: string }) {
   return (
     <a href={href} className="brand">
-      <span className="brand-icon"><Crown size={20} aria-hidden="true" /></span>
+      <BrandMark size={34} className="brand-icon" />
       <span className="brand-text"><strong>CashKing</strong><small>Tesoreria per PMI</small></span>
     </a>
   );

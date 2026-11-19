@@ -53,7 +53,7 @@ button { cursor: pointer; }
 .header-inner { height: calc(var(--header) - 1px); display: flex; align-items: center; justify-content: space-between; gap: 18px; }
 .brand { display: inline-flex; align-items: center; gap: 9px; flex: none; width: fit-content; }
 .brand:hover { text-decoration: none; }
-.brand-icon { display: grid; place-items: center; width: 34px; height: 34px; border: 1px solid var(--line); border-radius: 6px; }
+.brand-icon { flex: none; }
 .brand-text { display: grid; gap: 3px; line-height: 1; }
 .brand-text strong { font-size: 20px; letter-spacing: -.045em; font-weight: 750; }
 .brand-text small { font-size: 12px; color: var(--muted); }
@@ -348,7 +348,7 @@ button { cursor: pointer; }
   .product-sidebar li { padding: 5px 4px; border-bottom: 0; border-left: 2px solid transparent; }
   .product-sidebar li[aria-current] { background: #edeaf2; border-color: var(--ink); }
   .product-wordmark { display: flex; gap: 4px; align-items: center; line-height: 1.2; }
-  .product-wordmark svg { flex: none; }
+  .product-wordmark img { flex: none; }
   .product-wordmark small { display: block; font-size: 10px; color: var(--muted); white-space: nowrap; }
   .plot { min-height: 185px; }
   .site-footer address { grid-template-columns: repeat(2, max-content); }

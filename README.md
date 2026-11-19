@@ -15,6 +15,8 @@ Apri `http://localhost:3000`. Per verificare la versione di produzione, esegui `
 
 Le anteprime nelle Funzioni cambiano con la voce selezionata su desktop; sugli schermi più stretti si aprono sotto la relativa descrizione con il controllo «Anteprima». Importi, date e controparti nei mockup sono fittizi.
 
+Il logo usato nell’intestazione, nel footer, nei mockup e nell’immagine di condivisione è [`public/logo.svg`](./public/logo.svg). Se aggiorni il logo, mantieni allineata anche la favicon [`app/icon.svg`](./app/icon.svg).
+
 ## Pubblicazione su Vercel
 
 Carica il progetto in un repository GitHub e importalo su Vercel con il preset **Next.js**. Mantieni il comando di build predefinito (`npm run build`): la route `/` è prerenderizzata. Non occorrono variabili d’ambiente.
