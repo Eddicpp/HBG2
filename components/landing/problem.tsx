@@ -1,7 +1,7 @@
 import { SectionHeading } from "./shared";
 
 const painPoints = [
-  { title: "Il buco emerge a fine mese", text: "Te ne accorgi quando i pagamenti sono già in scadenza e hai poco tempo per intervenire." },
+  { title: "Scoperte a ridosso delle scadenze", text: "I pagamenti sono già vicini e hai poco tempo per intervenire." },
   { title: "Le uscite si concentrano", text: "IVA, F24 e stipendi cadono nella stessa settimana. Gli incassi, invece, possono slittare." },
   { title: "Excel ti ruba le serate", text: "Tra file, estratti conto e fatture, aggiornare i numeri a mano diventa un secondo lavoro." },
 ];

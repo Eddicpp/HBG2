@@ -1,8 +1,9 @@
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { ImageResponse } from "next/og";
+import { HERO_TITLE } from "@/lib/landing-copy";
 
-export const alt = "CashKing Tesoreria per PMI: sai quanta cassa avrai fra 8 settimane, dopo IVA, stipendi e fornitori";
+export const alt = `CashKing Tesoreria per PMI — ${HERO_TITLE}`;
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -19,7 +20,7 @@ export default async function OpenGraphImage() {
         </div>
       </div>
       <div style={{ display: "flex", fontSize: 65, lineHeight: 1.12, letterSpacing: "-2px", marginTop: 46, maxWidth: 1010 }}>
-        Sai quanta cassa avrai fra 8 settimane, dopo IVA, stipendi e fornitori
+        {HERO_TITLE}
       </div>
     </div>,
     size,

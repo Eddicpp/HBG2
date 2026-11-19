@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ChevronDown } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { CashChart } from "./cash-chart";
 import { ProductFrame, type ProductArea } from "./product-frame";
@@ -53,7 +53,18 @@ export function Features() {
             <div className="feature-stage">{features.map((feature) => <TabsContent className="feature-preview" key={feature.id} value={feature.id}><FeaturePreview feature={feature} /></TabsContent>)}</div>
           </Tabs>
         </div>
-        <div className="features-mobile">{features.map((feature) => <article key={feature.id}><h3>{feature.title}</h3><p>{feature.text}</p><FeaturePreview feature={feature} /></article>)}</div>
+        <div className="features-mobile">{features.map((feature) => (
+          <article key={feature.id}>
+            <h3 id={`funzione-${feature.id}`}>{feature.title}</h3>
+            <p>{feature.text}</p>
+            <details className="feature-disclosure">
+              <summary aria-labelledby={`anteprima-${feature.id} funzione-${feature.id}`}>
+                <span id={`anteprima-${feature.id}`}>Anteprima</span><ChevronDown size={16} aria-hidden="true" />
+              </summary>
+              <FeaturePreview feature={feature} />
+            </details>
+          </article>
+        ))}</div>
       </div>
     </section>
   );

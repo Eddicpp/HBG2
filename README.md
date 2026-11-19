@@ -13,7 +13,7 @@ npm run dev
 
 Apri `http://localhost:3000`. Per verificare la versione di produzione, esegui `npm run build` e poi `npm start`.
 
-Le anteprime nelle Funzioni cambiano con la voce selezionata su desktop; sugli schermi più stretti sono mostrate sotto ciascuna voce. Importi, date e controparti nei mockup sono fittizi.
+Le anteprime nelle Funzioni cambiano con la voce selezionata su desktop; sugli schermi più stretti si aprono sotto la relativa descrizione con il controllo «Anteprima». Importi, date e controparti nei mockup sono fittizi.
 
 ## Pubblicazione su Vercel
 
