@@ -17,6 +17,8 @@ Le anteprime nelle Funzioni cambiano con la voce selezionata su desktop; sugli s
 
 Il logo usato nell’intestazione, nel footer, nei mockup e nell’immagine di condivisione è [`public/logo.svg`](./public/logo.svg). Se aggiorni il logo, mantieni allineata anche la favicon [`app/icon.svg`](./app/icon.svg).
 
+Il video nella sezione «Fotografa la fattura» usa i file in [`public/video/`](./public/video/): 16:9 su desktop, 4:5 su mobile e didascalie in italiano. Il poster 4:5 viene mostrato anche su desktop senza ritagli. Con la preferenza di movimento ridotto il video parte solo dopo aver premuto «Guarda il video».
+
 ## Pubblicazione su Vercel
 
 Carica il progetto in un repository GitHub e importalo su Vercel con il preset **Next.js**. Mantieni il comando di build predefinito (`npm run build`): la route `/` è prerenderizzata. Non occorrono variabili d’ambiente.
