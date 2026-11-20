@@ -1,66 +1,67 @@
 WEBVTT
 
 1
-00:00:00.600 --> 00:00:06.000
+00:00:00.600 --> 00:00:04.289
 Fotografi la fattura.
 
 2
-00:00:06.400 --> 00:00:16.000
+00:00:04.689 --> 00:00:10.026
 CashKing legge fornitore, date, IVA, totali e IBAN.
 
 3
-00:00:16.400 --> 00:00:24.000
+00:00:10.425 --> 00:00:14.876
 Il codice controlla i conti.
 Se torna tutto, il movimento è pronto.
 
 4
-00:00:24.400 --> 00:00:36.000
+00:00:15.216 --> 00:00:22.724
 Solo sui casi dubbi interpella
 un assistente AI esterno via API.
 
 5
-00:00:36.400 --> 00:00:44.000
+00:00:23.064 --> 00:00:29.004
 Il codice riverifica.
 Tu confermi con un click.
 
 6
-00:00:44.300 --> 00:00:47.300
+00:00:29.194 --> 00:00:31.854
 Meno correzioni a mano.
 
 7
-00:00:47.300 --> 00:00:50.300
+00:00:31.854 --> 00:00:34.561
 Costi bassi: AI solo quando serve.
 
 8
-00:00:50.300 --> 00:00:53.000
+00:00:34.561 --> 00:00:37.553
 Ogni decisione è tracciata.
 
 9
-00:00:53.200 --> 00:00:55.600
+00:00:37.754 --> 00:00:39.354
 Cosa diventa possibile:
 rilegge i campi incerti.
 
 10
-00:00:55.600 --> 00:00:57.600
+00:00:39.354 --> 00:00:40.553
 Controlla che aliquote e ritenute siano coerenti.
 
 11
-00:00:57.600 --> 00:00:59.600
+00:00:40.553 --> 00:00:41.754
 Segnala anomalie e possibili frodi.
 
 12
-00:00:59.600 --> 00:01:01.600
+00:00:41.754 --> 00:00:42.953
 Propone la categoria di costo con motivazione.
 
 13
-00:01:01.600 --> 00:01:03.600
+00:00:42.953 --> 00:00:44.154
 Riconcilia i bonifici con causale poco chiara.
 
 14
-00:01:03.600 --> 00:01:07.000
+00:00:44.154 --> 00:00:47.373
 Risponde a domande sulla cassa.
 
 15
-00:01:07.600 --> 00:01:12.500
+00:00:47.973 --> 00:00:51.782
 CashKing. La cassa sotto controllo,
 anche quando la fattura è difficile.
+
